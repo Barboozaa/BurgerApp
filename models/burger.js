@@ -1,10 +1,8 @@
 var orm = require("../config/orm.js");
-// TAKES ABSTRACTIONS FROM ORM AND GIVES THEM SPECIFIC VALUES
 
 var burger = {
-    // CALLS ORM FUNCS AGIVES VALUES FROM INPUT
     all: function(callback) {
-        orm.selectAll("burgers", function(res) {
+        orm.selectAll(function(res) {
             callback(res);
         })
     },

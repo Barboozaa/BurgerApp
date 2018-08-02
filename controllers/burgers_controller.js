@@ -13,7 +13,7 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/burgers", function (req, res) {
-    burger.new(["burger_name"], [req.body.burger_name], function (result) {
+    burger.new(req.body.burger_name, function (result) {
         res.json({ id: result.insertId });
     });
 });
@@ -21,7 +21,7 @@ router.post("/api/burgers", function (req, res) {
 router.put("/api/burgers/:id", function (req, res) {
     var burgId = "id = " + req.params.id;
 
-    burger.devour(burgId, condition, function (result) {
+    burger.devour(burgId, function (result) {
         res.json(result)
     });
 });
