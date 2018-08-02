@@ -17,7 +17,3 @@ connection.connect(function (err) {
 });
 
 module.exports = connection;
-
-
-
-// LOOK AT CATS APP IN THE HANDLEBARS FOLDER
