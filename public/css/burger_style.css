@@ -31,5 +31,19 @@ li {
 .form {
     background-color: #A77D0B;
     width: 40%;
+    height: 50px;
     margin: 500px auto 0 auto
+}
+
+button {
+    float: right;
+    position: relative;
+    bottom: 5px;
+    right: 15px
+}
+
+label, input {
+    position: relative;
+    top: 15px;
+    left: 15px
 }
