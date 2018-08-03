@@ -19,10 +19,10 @@ router.post("/api/burgers", function (req, res) {
 });
 
 router.put("/api/burgers/:id", function (req, res) {
-    var burgId = "id = " + req.params.id;
+    var burgId = req.params.id;
 
     burger.devour(burgId, function (result) {
-        res.json(result)
+        res.end()
     });
 });
 

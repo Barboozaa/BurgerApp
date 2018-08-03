@@ -1,15 +1,35 @@
+html {
+    background-image: url("../images/burgers.jpg")
+}
+
+h1, h2 {
+    text-align: center;
+    text-decoration: underline
+}
+
 .container {
-    width: 85%
+    width: 65%;
+    margin: 30px auto
 }
 
 .left {
-    float: left
+    background-color: #A77D0B;
+    width: 40%;
+    float: left;
 }
 
 .right {
-    float: right
+    background-color: #A77D0B;
+    width: 40%;
+    float: right;
 }
 
 li {
     margin: 5px
+}
+
+.form {
+    background-color: #A77D0B;
+    width: 40%;
+    margin: 500px auto 0 auto
 }
